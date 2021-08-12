@@ -12,21 +12,23 @@ $(document).on('ready page:load', function () {
 
     let langs = Object.keys(data).filter(key => key !== "colorSet").sort((a,b) => - data[a].totalCount + data[b].totalCount);
     let langsIndex =[
-      "Spanish",
-      "French",
-      "English",
-      "Portuguese",
-      "Romanian",
+//       "Spanish",
+//       "French",
+//       "Portuguese",
+//       "Romanian",
       "Dutch",
-      "Polish",
-      "Persian (Farsi)",
-      "Swedish",
-      "Finnish",
-      "German",
-      "Russian",
+//       "Polish",
+//       "Persian (Farsi)",
+//       "Swedish",
+//       "Finnish",
+//       "German",
+//       "Russian",
       "Chinese",
-      "Korean"
+      "English",
+//       "Korean"
     ]; // sorted by similarity of saliency
+      langs = langs.filter(x => langsIndex.find(l => x.startsWith(l)));
+      console.log("languages:", langs);
     langs =langs.sort((a,b) => langsIndex.findIndex(d => a.indexOf(d) >=0) - langsIndex.findIndex(d => b.indexOf(d) >=0) );
     langs.forEach((lang, i) => {
       $(".container").append('<div class="row" id="vis'+i+'"></div>');
