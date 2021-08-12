@@ -1,7 +1,7 @@
 # Many Languages, Many Colors Dataset
 ## Color Naming Data, Models, Translations, and Visualizations
 
-Official Website is located at [https://uwdata.github.io/color-naming-in-different-languages](https://uwdata.github.io/color-naming-in-different-languages)
+Official Website is located at [https://ijager.github.io/color-naming-in-different-languages](https://ijager.github.io/color-naming-in-different-languages)
 
 This repository contains supplement material of [the paper](http://idl.cs.washington.edu/papers/multi-lingual-color-names/) including:
 - Color-name judgements that are collected from our 12 minute [color perception survey](http://labinthewild.org/studies/color_perception/) on [LabIntheWild](https://labinthewild.org/)
